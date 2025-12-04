@@ -25,3 +25,11 @@ C:.
 #Start .venv : .\.venv\Scripts\Activate.ps1
 
 #Esegui Test : pytest
+
+##  Commit e publishing GIT
+
+#Build image docker
+docker build --build-arg DOCKER_SCOUT_DISABLE=1 -t python-service:local .
+
+## Docker HUB - Registry
+User:LMatarazzi Password:Skulls.2023
